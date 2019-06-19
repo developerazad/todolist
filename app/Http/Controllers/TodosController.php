@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Todo;
 
+
 class TodosController extends Controller
 {
     /**
@@ -26,7 +27,7 @@ class TodosController extends Controller
      */
     public function create()
     {
-        //
+        return view('todos.create');
     }
 
     /**
@@ -37,7 +38,7 @@ class TodosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "Submitted";
     }
 
     /**
