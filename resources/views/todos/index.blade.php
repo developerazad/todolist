@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Todos</h1>
+    <h1>Todo List</h1>
     @if(count($todos) > 0)
         @foreach($todos as $todo)
             <div class="well">
