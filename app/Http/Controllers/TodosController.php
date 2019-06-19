@@ -40,7 +40,9 @@ class TodosController extends Controller
     {
         //return "Submitted";
         $this->validate($request,[
-            'text' => 'required'
+            'text' => 'required',
+            'body' => 'required',
+            'due' => 'required',
         ]);
         $todo = new Todo();
         $todo->text = $request->input('text');
@@ -100,6 +102,8 @@ class TodosController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $todo = Todo::find($id);
+        $todo->delete();
+        return redirect('/')->with('success', 'Todo Deleted');
     }
 }
