@@ -10,5 +10,6 @@
         {{ Form::bsText('due') }}
         {{ Form::bsSubmit('Submit') }}
 
+
     {{ Form::close() }}
 @endsection

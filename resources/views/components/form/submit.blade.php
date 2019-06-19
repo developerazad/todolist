@@ -1,3 +1,3 @@
 <div class="form-group">
-    {{ Form::submit($value, $attributes) }}
+    {{ Form::submit($value,  $attributes) }}
 </div>
